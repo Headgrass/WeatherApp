@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="city">Новосибирск</string>
+    <string name="currDate">ВС, 03.05</string>
+    <string name="currInfo">Солнце и облачно</string>
+    <string name="emtyImg">Weather Image</string>
+    <string name="current_temp">15°C</string>
+    <string name="weather_image">Weather Image</string>
+    <string name="fewday">ВС</string>
+    <string name="fewtemp">15°C</string>
+    <string name="fewweather">Солнце и облачно</string>
+    <string name="fewday2">ПН</string>
+    <string name="fewtemp2">12°C</string>
+    <string name="fewinfo2">Облачно с дождем</string>
+    <string name="fewday3">ВТ</string>
+    <string name="fewtemp3">19°C</string>
+    <string name="fewinfo3">Очень солнечно</string>
+    <string name="fewday4">СР</string>
+    <string name="fewtemp4">16°C</string>
+    <string name="fewinfo4">Солнечно и тучи</string>
+    <string name="likeInfo">Интересный факт о сегодняшнем дне:\nВ 1904 году американский изобретатель Джордж Паркер (George Parker) запатентовал свою первую письменную ручку.</string>
+    <string name="btnSettings">Настройки</string>
+    <string name="todo">TODO</string>
+
+</resources>
