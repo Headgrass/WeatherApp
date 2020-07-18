@@ -1,9 +1,11 @@
 package com.example.weatherapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,6 +18,5 @@ public class AboutDay extends Fragment {
        // return super.onCreateView(inflater, container, savedInstanceState);
         View view = inflater.inflate(R.layout.about_day, container, false);
             return view;
-
     }
 }

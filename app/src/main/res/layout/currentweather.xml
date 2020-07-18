@@ -8,7 +8,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/bgd_color"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/currDate"
-                android:textColor="@color/H2Color" />
+                android:textColor="@color/colorCity" />
         </LinearLayout>
 
         <LinearLayout
@@ -62,7 +61,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/current_temp"
-                android:textColor="@color/H2Color"
+                android:textColor="@color/colorCity"
                 android:textSize="60sp" />
         </LinearLayout>
 
@@ -76,7 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/currInfo"
-                android:textColor="@color/H2Color" />
+                android:textColor="@color/colorCity" />
         </LinearLayout>
 
     </LinearLayout>
