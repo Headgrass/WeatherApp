@@ -21,12 +21,6 @@
     <string name="likeInfo">Интересный факт о сегодняшнем дне:\nВ 1904 году американский изобретатель Джордж Паркер (George Parker) запатентовал свою первую письменную ручку.</string>
     <string name="btnSettings">Настройки</string>
     <string name="todo">TODO</string>
-    <string name="titleInputCity">Введите город</string>
-    <string name="titleSettings">Настройки</string>
-    <string name="titleextra">Дополнительно</string>
-    <string name="textShowHumidity">Показывать влажность</string>
-    <string name="textShowPressure">Показывать давление</string>
-    <string name="textShowColorTheme">Выберите цвет темы</string>
-    <string name="textBtnOk">Сохранить</string>
+    <string name="name_button_back">Готово</string>
 
 </resources>
