@@ -3,4 +3,6 @@
     <dimen name="H1size">18sp</dimen>
     <dimen name="textsizepanel">24sp</dimen>
     <dimen name="item">42sp</dimen>
+    <dimen name="Textextras">30sp</dimen>
+    <dimen name="TextItemextras">20sp</dimen>
 </resources>
