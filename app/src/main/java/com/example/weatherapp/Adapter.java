@@ -28,7 +28,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         // Создаем новый элемент пользовательского интерфейса
         // Через Inflater
         View v = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.item, viewGroup, false);
+                .inflate(R.layout.item_view, viewGroup, false);
         // Здесь можно установить всякие параметры
         return new ViewHolder(v);
     }
@@ -68,7 +68,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            textView = itemView.findViewById(R.id.textView);
+            textView = itemView.findViewById(R.id.itemCity);
 
             // Обработчик нажатий на этом ViewHolder
             textView.setOnClickListener(new View.OnClickListener() {

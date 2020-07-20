@@ -27,5 +27,6 @@
     <string name="TextShowHumidity">Влажность</string>
     <string name="TextShowPressure">Давление</string>
     <string name="extra">Дополнительно</string>
+    <string name="hintInputCity">Введите город</string>
 
 </resources>

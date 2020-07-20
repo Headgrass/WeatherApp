@@ -1,17 +1,21 @@
 package com.example.weatherapp;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class Settings extends AppCompatActivity {
+import com.google.android.material.button.MaterialButtonToggleGroup;
 
+public class Settings extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,10 +23,21 @@ public class Settings extends AppCompatActivity {
 
         String[] data = getResources().getStringArray(R.array.items);
         initRecyclerView(data);
+
+        Switch switchDarkTheme = findViewById(R.id.swColorTheme);
+        switchDarkTheme.setChecked(isDarkTheme());
+        switchDarkTheme.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                setDarkTheme(isChecked);
+                recreate();
+            }
+        });
+
     }
 
-    private void initRecyclerView(String[] data){
-        RecyclerView recyclerView = findViewById(R.id.recycleview);
+        private void initRecyclerView(String[] data){
+        RecyclerView recyclerView = findViewById(R.id.recyclerview);
 
         // Эта установка служит для повышения производительности системы
         recyclerView.setHasFixedSize(true);
@@ -47,7 +62,6 @@ public class Settings extends AppCompatActivity {
         back_to_main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Bundle(onSaveInstanceState();)
                 finish();
             }
         });
