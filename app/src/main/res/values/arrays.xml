@@ -3,6 +3,8 @@
     <string-array name="items">
         <item>Новосибирск</item>
         <item>Москва</item>
+        <item>Самара</item>
+        <item>Омск</item>
         <item>Санкт-Петербург</item>
     </string-array>
 </resources>

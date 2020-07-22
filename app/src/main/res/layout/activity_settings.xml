@@ -23,21 +23,25 @@
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/editCity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/textInputCity"
-        android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/ch_City" />
+        app:layout_constraintTop_toBottomOf="@+id/ch_City">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/hintInputCity" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycleview"
-        android:layout_width="254dp"
-        android:layout_height="205dp"
-        app:layout_constraintEnd_toEndOf="@+id/ch_City"
+        android:id="@+id/recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/editCity"
         tools:itemCount="5"
@@ -51,7 +55,7 @@
         android:text="@string/extra"
         android:textSize="@dimen/Textextras"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@id/recycleview"/>
+        app:layout_constraintTop_toBottomOf="@id/recyclerview"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -77,9 +81,22 @@
             android:layout_weight="1"
             android:text="@string/TextShowPressure"
             android:textSize="@dimen/TextItemextras" />
+
+        <Switch
+            android:id="@+id/swColorTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Цвет темы"
+            android:textOff="Темная"
+            android:textOn="Светлая"
+            tools:checked="false" />
+
     </LinearLayout>
 
-    <Button
+
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/backToMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
